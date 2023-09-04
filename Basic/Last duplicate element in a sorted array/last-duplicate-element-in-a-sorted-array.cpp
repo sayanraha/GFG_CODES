@@ -40,12 +40,19 @@ vector<int> dupLastIndex(int arr[], int n) {
     
     //vector<int> res;
     
-    while(--n){
+    /*while(--n){
         
         if(arr[n] == arr[n-1] ){
             return {n,arr[n]};
         }
+    }*/
+    
+    
+    for(int i = n-1;i >= 0;i--){
         
+        if(arr[i] == arr[i-1]){
+            return {i,arr[i]};
+        }
     }
     
     return {-1};
