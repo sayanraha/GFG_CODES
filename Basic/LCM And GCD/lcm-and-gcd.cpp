@@ -12,7 +12,8 @@ class Solution {
         // code here
         
         const long long gcd{ __gcd( a, b )};
-    return { a * b / gcd, gcd };
+        
+        return { a * b / gcd, gcd };
     }
 };
 
