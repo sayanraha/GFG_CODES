@@ -18,7 +18,8 @@ class Solution{
         {
             return false;
         }
-        if(j < 0 and i >= 0){
+        if(j < 0 and i >= 0)// if j gets exhausted but there are characters still left in the wild string and those characters are assumed to be '*' then do the necessary looping 
+         {
             
             for(int x = 0; x < i;x++){
                 if(wild[x] != '*')
